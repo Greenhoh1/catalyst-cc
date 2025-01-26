@@ -1,94 +1,132 @@
-<!DOCTYPE html>  
-<html lang="en">  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <meta name="description" content="Catalyst CC">  
-    <title>Catalyst CC</title>  
-    <style>  
-        body {  
-            font-family: Arial, sans-serif;  
-            margin: 0;  
-            padding: 0;  
-            background: linear-gradient(to bottom, #0d1b2a, #1b263b);  
-            color: #e0e1dd;  
-        }  
-        header {  
-            background: #1b263b;  
-            padding: 20px;  
-            text-align: center;  
-            font-size: 1.8rem;  
-            font-weight: bold;  
-            border-bottom: 2px solid #415a77;  
-        }  
-        main {  
-            padding: 20px;  
-            max-width: 800px;  
-            margin: 0 auto;  
-            text-align: center;  
-        }  
-        .button {  
-            display: inline-block;  
-            background: #415a77;  
-            color: #e0e1dd;  
-            padding: 10px 20px;  
-            margin: 10px;  
-            border: none;  
-            border-radius: 5px;  
-            text-decoration: none;  
-            font-size: 1rem;  
-            transition: background 0.3s ease;  
-        }  
-        .button:hover {  
-            background: #0d1b2a;  
-        }  
-        footer {  
-            text-align: center;  
-            padding: 10px;  
-            background: #1b263b;  
-            border-top: 2px solid #415a77;  
-            position: fixed;  
-            bottom: 0;  
-            width: 100%;  
-        }  
-    </style>  
-</head>  
-<body>  
-    <header>  
-        Catalyst CC - ComputerCraft Modded Server  
-    </header>  
-    <main>  
-        <h1>Welcome to Catalyst CC!</h1>  
-        <p>A server all about ComputerCraft! We inspire to have a friendly atmosphere, and want our players to be creative and have fun!</p>  
-        <a href="https://discord.gg/HkQghGrBdH" class="button">Join Our Discord</a>  
-        <a href="https://mc.nullharp.xyz" class="button">Play Now (IP: mc.nullharp.xyz)</a>  
-        <section>  
-            <h2>About Catalyst CC</h2>  
-            <p>Join us in exploring the world of ComputerCraft mods with an amazing community. Build, program, and automate to your heart’s content with mods tailored for creativity and fun!</p>  
-        </section>  
-        <section>  
-            <h2>Mods in Our Pack</h2>  
-            <ul style="text-align: left; display: inline-block;">  
-                <li>Plethora</li>  
-                <li>SwitchCraft Goodies + Peripherals</li>  
-                <li>Fluid Tank Mod</li>  
-                <li>Unlimited Peripheral Works</li>  
-                <li>Turtlematic</li>  
-                <li>Numismatic Overhaul</li>  
-                <li>Claim Mod (Flan)</li>  
-            </ul>  
-        </section>  
-        <section>  
-            <h2>Getting Started</h2>  
-            <ol style="text-align: left; display: inline-block;">  
-                <li>Download the modpack from <a href="https://discord.com/channels/1323340735168254074/1323349646181011506" style="color: #ffcc00;">the discord server</a>.</li>  
-                <li>Install the mods using prism launcher</li>  
-                <li>have fun playing the server!</li>  
-            </ol>  
-        </section>  
-    </main>  
-    <footer>  
-        © 2025 Catalyst CC. All rights reserved.  
-    </footer>  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catalyst CC - A Modded Minecraft Server">
+    <meta name="keywords" content="Minecraft, Modded Server, ComputerCraft, Catalyst CC, Plethora, Turtlematic">
+    <title>Catalyst CC - ComputerCraft Modded Server</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #1b263b, #0d1b2a);
+            color: #e0e1dd;
+        }
+        header {
+            background: #102a43;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ffcc00;
+            border-bottom: 3px solid #415a77;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin: 20px 0 10px;
+        }
+        p, li {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .button {
+            display: inline-block;
+            background: #415a77;
+            color: #e0e1dd;
+            padding: 15px 25px;
+            margin: 15px;
+            border: none;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background 0.3s, transform 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .button:hover {
+            background: #ffcc00;
+            color: #1b263b;
+            transform: scale(1.05);
+        }
+        ul, ol {
+            text-align: left;
+            display: inline-block;
+            padding: 0;
+            list-style: none;
+        }
+        ul li, ol li {
+            padding: 5px 0;
+        }
+        a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #102a43;
+            color: #e0e1dd;
+            border-top: 3px solid #415a77;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Catalyst CC - ComputerCraft Modded Server
+    </header>
+    <main>
+        <h1>Welcome to Catalyst CC!</h1>
+        <p>A modded Minecraft server dedicated to <strong>ComputerCraft</strong>. Join a creative, friendly community and explore endless possibilities with mods!</p>
+        <a href="https://discord.gg/HkQghGrBdH" class="button">Join Our Discord</a>
+        <a href="https://mc.nullharp.xyz" class="button">Play Now (IP: mc.nullharp.xyz)</a>
+        
+        <section>
+            <h2>About Catalyst CC</h2>
+            <p>Catalyst CC is the ultimate destination for players passionate about programming, automation, and creativity in Minecraft. Join us to build, program, and share your ideas in an inclusive environment!</p>
+        </section>
+        
+        <section>
+            <h2>Mods in Our Pack</h2>
+            <ul>
+                <li>Plethora</li>
+                <li>SwitchCraft Goodies + Peripherals</li>
+                <li>Fluid Tank Mod</li>
+                <li>Unlimited Peripheral Works</li>
+                <li>Turtlematic</li>
+                <li>Numismatic Overhaul</li>
+                <li>Claim Mod (Flan)</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Getting Started</h2>
+            <ol>
+                <li>Join our <a href="https://discord.gg/HkQghGrBdH">Discord Server</a> to download the modpack.</li>
+                <li>Install the mods using <strong>Prism Launcher</strong>.</li>
+                <li>Log into the server and start your adventure!</li>
+            </ol>
+        </section>
+    </main>
+    <footer>
+        © 2025 Catalyst CC | <a href="https://discord.gg/HkQghGrBdH">Discord</a> | <a href="https://mc.nullharp.xyz">Play Now</a>
+    </footer>
+</body>
+</html>
