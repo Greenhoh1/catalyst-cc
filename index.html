@@ -7,90 +7,134 @@
     <meta name="keywords" content="Minecraft, Modded Server, ComputerCraft, Catalyst CC, Plethora, Turtlematic">
     <title>Catalyst CC - ComputerCraft Modded Server</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        :root {
+            --primary-color: #4f46e5;
+            --secondary-color: #1e293b;
+            --accent-color: #f59e0b;
+            --background-gradient: linear-gradient(to bottom, #1e3a8a, #0f172a);
+            --text-color-light: #e2e8f0;
+            --text-color-dark: #94a3b8;
+            --button-hover: #3b82f6;
+            --button-shadow: rgba(0, 0, 0, 0.2);
+            --card-bg: #1e293b;
+            --border-radius: 12px;
+            --transition-speed: 0.3s;
+        }
+
+        * {
             margin: 0;
             padding: 0;
-            background: linear-gradient(to bottom, #1b263b, #0d1b2a);
-            color: #e0e1dd;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--background-gradient);
+            color: var(--text-color-light);
+            line-height: 1.6;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
         header {
-            background: #102a43;
+            background: var(--secondary-color);
             padding: 20px;
             text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-            color: #ffcc00;
-            border-bottom: 3px solid #415a77;
+            border-bottom: 4px solid var(--accent-color);
+            box-shadow: 0 4px 6px var(--button-shadow);
         }
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        h1 {
+
+        header h1 {
             font-size: 2.5rem;
-            margin-bottom: 20px;
+            color: var(--primary-color);
         }
-        h2 {
+
+        main {
+            padding: 30px 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            margin: 20px 0;
+            max-width: 800px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 6px var(--button-shadow);
+        }
+
+        section h2 {
             font-size: 1.8rem;
-            margin: 20px 0 10px;
+            color: var(--accent-color);
+            margin-bottom: 15px;
         }
+
         p, li {
             font-size: 1.1rem;
-            line-height: 1.6;
+            color: var(--text-color-dark);
         }
+
+        ul, ol {
+            padding-left: 20px;
+        }
+
         .button {
             display: inline-block;
-            background: #415a77;
-            color: #e0e1dd;
+            background: var(--primary-color);
+            color: white;
             padding: 15px 25px;
             margin: 15px;
             border: none;
-            border-radius: 10px;
+            border-radius: var(--border-radius);
             text-decoration: none;
             font-size: 1.1rem;
-            transition: background 0.3s, transform 0.2s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background var(--transition-speed), transform var(--transition-speed);
+            box-shadow: 0 4px 6px var(--button-shadow);
         }
+
         .button:hover {
-            background: #ffcc00;
-            color: #1b263b;
+            background: var(--button-hover);
             transform: scale(1.05);
         }
-        ul, ol {
-            text-align: left;
-            display: inline-block;
-            padding: 0;
-            list-style: none;
-        }
-        ul li, ol li {
-            padding: 5px 0;
-        }
-        a {
-            color: #ffcc00;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+
         footer {
             text-align: center;
             padding: 20px;
-            background: #102a43;
-            color: #e0e1dd;
-            border-top: 3px solid #415a77;
-            margin-top: 20px;
+            background: var(--secondary-color);
+            color: var(--text-color-light);
+            border-top: 4px solid var(--accent-color);
         }
+
         footer a {
-            color: #ffcc00;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .button {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        Catalyst CC - ComputerCraft Modded Server
+        <h1>Catalyst CC</h1>
     </header>
     <main>
         <h1>Welcome to Catalyst CC!</h1>
