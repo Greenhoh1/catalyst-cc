@@ -4,33 +4,40 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Catalyst CC</title>
-  <meta name="description" content="Catalyst CC is a friendly community‑driven ComputerCraft server with powerful mods and endless creativity">
+  <meta name="description" content="Catalyst CC is a creative, community‑driven ComputerCraft server running CC: Tweaked and dozens of fun mods.">
 
-  <!-- favicon -->
+  <!-- Favicon -->
   <link rel="icon" href="catalyst logo.png" type="image/png">
 
+  <!-- Theme color for mobile browsers -->
+  <meta name="theme-color" content="#0cffe0">
+
+  <!-- Preload our CSS for a faster first render -->
+  <link rel="preload" href="style.css" as="style">
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
-    <img src="catalyst logo.png" alt="Catalyst logo" class="logo">
-    <div>
-      <h1>Catalyst CC</h1>
-      <p>A friendly and creative ComputerCraft server</p>
-    </div>
+    <img src="catalyst logo.png" alt="Catalyst CC logo" class="logo">
+    <h1>Catalyst CC</h1>
+    <p class="tagline">A creative ComputerCraft server</p>
+    <nav class="quick-links">
+      <a href="https://discord.gg/HkQghGrBdH" target="_blank">Discord</a>
+      <a href="#connect">Connect</a>
+    </nav>
   </header>
 
   <main class="container">
-    <section class="about">
+    <section id="about" class="about">
       <h2>About the server</h2>
       <p>
-        Catalyst CC is all about fun, creativity and teamwork.  
-        Dive into powerful peripherals, redstone wizardry or wild automation with Create.  
-        Everyone is welcome here.
+        Catalyst CC is a community‑driven ComputerCraft hub built around CC: Tweaked.  
+        Experience CC tweaked peripherals, redstone contraptions, and automation  
+        all in a friendly, creative atmosphere.
       </p>
     </section>
 
-    <section class="mods">
+    <section id="mods" class="mods">
       <h2>Full mod list</h2>
       <div class="mod-grid">
         <ul>
@@ -43,13 +50,13 @@
           <li>EMI</li>
           <li>Embedded Computer</li>
           <li>Fabric API</li>
-          <li>Fabric Language Kotlin</li>
+          <li>Fabric Language Kotlin</li>
         </ul>
         <ul>
           <li>Figura</li>
           <li>Finer Peripherals</li>
           <li>Fluid Tank</li>
-          <li>Forge Config API Port</li>
+          <li>Forge Config API Port</li>
           <li>Indium</li>
           <li>Iris</li>
           <li>Jade</li>
@@ -75,18 +82,22 @@
       </div>
     </section>
 
-    <section class="connect">
+    <section id="connect" class="connect">
       <h2>Connect with us</h2>
-      <p><strong>IP</strong> <code>mc.nullharp.xyz</code> included in the pack</p>
+      <p><strong>IP</strong> <code>mc.nullharp.xyz</code> (in‑pack)</p>
       <p>
         <strong>Discord</strong>
-        <a href="https://discord.gg/HkQghGrBdH" target="_blank" class="btn">Join our Discord</a>
+        <a href="https://discord.gg/HkQghGrBdH" target="_blank" class="btn">Join Discord</a>
       </p>
+      <!--
+        You can drop in a server‑status widget here later,
+        e.g. <div id="status-widget"></div>
+      -->
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© 2025 Catalyst CC – built for the ComputerCraft community</p>
+    <p>© 2025 Catalyst CC — built for the ComputerCraft community</p>
   </footer>
 </body>
 </html>
